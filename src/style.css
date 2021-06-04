@@ -1,3 +1,86 @@
-body {
-	background: #2a2a2b;
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+html, body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: #f5f5f5;
+	font-family: 'Suez One', serif;
+	text-align: center;
+}
+
+#options {
+	display: flex;
+	justify-content: center;
+}
+
+.vote-container {
+	height: 100%;
+}
+
+.vote-subject {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.option-images-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	border: #c0c0c0 0.3em;
+	padding: 2rem;
+}
+
+.image {
+	background-color: #2a2a2b;
+	object-fit: contain;
+	height: 15rem;
+	width: 15rem;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0 0 1rem #151712;
+	border-radius: 3rem;
+}
+
+.option {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vote-button {
+	font-size: 2rem;
+	font-family: 'Suez One', serif;
+	height: 4rem;
+	padding: 0 3rem 0 3rem;
+	border: black solid 2px;
+	border-radius: 4rem;
+	margin: 3rem;
+}
+
+.image:hover {
+	animation: pulse 1.3s infinite linear;
+}
+
+.vote-button:active {
+	background-color: gray;
+}
+
+@keyframes pulse {
+	0% {
+		transform: translateY(0px);
+		box-shadow: 0 0 1rem #151712;
+	}
+
+	50% {
+		box-shadow: 0 0.4rem 2rem #76bd26;
+		transform: translateY(-4px);
+	}
+
+	100% {
+		box-shadow: 0 0 1rem #151712;
+		transform: translateY(0px);
+	}
 }
