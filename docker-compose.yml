@@ -5,7 +5,7 @@ services:
   ui:
     container_name: ui
     build:
-      context: https://github.com/Sander-N/User-Interface
+      context: https://github.com/Sander-N/User-Interface.git
       dockerfile: Dockerfile
     volumes:
       - '.:/User-Interface'
