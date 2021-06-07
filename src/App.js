@@ -1,16 +1,16 @@
 import React from 'react';
-import OptionImage from './components/OptionImage';
+import Option from './components/Option';
 import './style.css';
 import cat from './cat.png';
 import dog from './dog.png';
 
 const firstOption = "Cats";
 const secondOption = "Dogs";
-const firstOptionImage = <OptionImage src={cat} alt={"First option"}/>;
-const secondOptionImage = <OptionImage src={dog} alt={"Second option"}/>;
+const firstOptionElement = <Option option={firstOption} src={cat} alt={"First option"}/>;
+const secondOptionElement = <Option option={secondOption} src={dog} alt={"Second option"}/>;
 const options = <div id="options">
-		{firstOptionImage}
-		{secondOptionImage}
+		{firstOptionElement}
+		{secondOptionElement}
 </div>
 
 function App() {
