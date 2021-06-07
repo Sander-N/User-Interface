@@ -60,6 +60,11 @@ html, body {
 	margin: 3rem;
 }
 
+.vote-button:hover {
+	box-shadow: 0 0.4rem 2rem #76bd26;
+	background-color: #DCDCDC;
+}
+
 .image:hover {
 	animation: pulse 1.3s infinite linear;
 }
