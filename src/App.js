@@ -19,7 +19,7 @@ function App() {
 			<h1 className="vote-subject">{firstOption} vs. {secondOption}</h1>
 			<h1 className="">Pick Your Favourite</h1>
 			{options}
-			<button className="vote-button">Submit Your Vote</button>
+			<button type="submit" className="vote-button">Submit Your Vote</button>
 		</div>
 	);
 }
