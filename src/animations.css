@@ -1,0 +1,16 @@
+@keyframes pulse {
+	0% {
+		transform: translateY(0px);
+		box-shadow: 0 0 1rem #151712;
+	}
+
+	50% {
+		box-shadow: 0 0.4rem 4rem #76bd26;
+		transform: translateY(-4px);
+	}
+
+	100% {
+		box-shadow: 0 0 1rem #151712;
+		transform: translateY(0px);
+	}
+}
