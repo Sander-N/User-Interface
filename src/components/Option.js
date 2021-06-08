@@ -31,7 +31,7 @@ export default class Option extends React.Component {
 			},
 			body: JSON.stringify({vote: this.state.option})
 		};
-		fetch('http://localhost:8080', request)
+		fetch('voting-api', request)
 			.then(response => response.json());
 	}
 
