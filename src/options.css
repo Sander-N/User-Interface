@@ -1,0 +1,34 @@
+.options {
+	display: flex;
+	justify-content: center;
+}
+
+.vote-container {
+	height: 100%;
+}
+
+.vote-subject {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.option {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image {
+	background-color: #2a2a2b;
+	object-fit: contain;
+	height: 15rem;
+	width: 15rem;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: 0 0 1rem #151712;
+	border-radius: 3rem;
+}
+
+.image:hover {
+	animation: pulse 1.3s infinite ease-in-out;
+}
